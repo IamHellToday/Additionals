@@ -1,68 +1,58 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
-html,
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 body {
-  height: 100%;
+	width: 100vw;
+	height: 100vh;
+	background-color: #010220;
 }
-
-body {
-  background-color: #353D3E;
+section {
+	width: 100%;
+	height: 5%;
+	padding: 5px;
+	text-align: center;
 }
-
-.loader {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+[class^="btn-"] {
+	display: inline-block;
+	min-height: 50px;
+	font-size: 16px;
+	font-style: bold;
+	border-radius: 5px;
+	cursor: pointer;
+	float: left;
+	width: 30%;
+	margin: 10px;
+	padding: 15px 30px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: inherit;
+	border: 2px solid;
+	transition: 0.4s;
+	/*Michał, dlaczego to transition musi być tutaj, aby był taki sam efekt ale w stronę przeciwną? Czemu tutaj, a nie przy :hover?*/
 }
-.loader > div {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  transform: rotate(45deg);
-  border-top-color: #55ee70;
-  animation-delay: .25s;
-  border-radius: 50%;
-  position: absolute;
-  animation: spin 2s infinite;
+.btn-purple {
+	background-image: linear-gradient(90deg, #8e44ad 50%, transparent 50%);
+	border-color: #8e44ad;
+	color: #8e44ad;
+	background-position: 100% 0;
+	background-size: 300%;
+	color: purple;
+	/*Prośba o wytłumaczenie dwóch powyższych styli background-*/
 }
-.loader .one {
-  width: 200px;
-  height: 200px;
-  transform: rotate(45deg);
-  border: 20px solid transparent;
-  border-top-color: #55ee70;
-  animation-delay: 0s;
+.btn-yellow {
+	background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+	border-color: #f1c40f;
+	color: #f1c40f;
+	background-position: 100% 0;
+	background-size: 300%;
+	color: yellow;
 }
-.loader .two {
-  width: 133.33333px;
-  height: 133.33333px;
-  border: 20px solid rgba(255, 255, 255, 0.5);
-  border-top-color: #55ee70;
-  animation-delay: 0.25s;
+.btn-blue {
+	background-image: linear-gradient(135deg, #3498db 50%, transparent 50%);
+	border-color: #3498db;
+	color: #3498db;
+	background-position: 100% 0;
+	background-size: 300%;
+	color: blue;
 }
-.loader .three {
-  width: 66.66667px;
-  height: 66.66667px;
-  border: 20px solid rgba(255, 255, 255, 0.5);
-  border-top-color: #55ee70;
-  animation-delay: .5s;
-}
-
-@keyframes spin {
-  50%,
-	100% {
-    transform: rotate(405deg);
-  }
+[class^="btn-"]:hover {
+	background-position: 0 100%;
+	color: white;
 }
