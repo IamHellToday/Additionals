@@ -1,58 +1,70 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 body {
-	width: 100vw;
-	height: 100vh;
-	background-color: #010220;
+	padding: 0;
+	margin: 0 auto;
 }
-section {
-	width: 100%;
-	height: 5%;
-	padding: 5px;
+h2 {
+	color: #505050;
+	font-size: 40px;
+}
+.social {
+	margin: 0 auto;
+	width: 500px;
 	text-align: center;
+	padding: 50px;
 }
-[class^="btn-"] {
-	display: inline-block;
-	min-height: 50px;
-	font-size: 16px;
-	font-style: bold;
-	border-radius: 5px;
+.icon-btn {
+	height: 75px;
+	width: 75px;
+	border: 0;
+	color: #FFFFFF;
+	border-radius: 50%;
+	margin: 5px;
 	cursor: pointer;
-	float: left;
-	width: 30%;
-	margin: 10px;
-	padding: 15px 30px;
-	font-family: 'Montserrat', sans-serif;
-	background-color: inherit;
-	border: 2px solid;
-	transition: 0.4s;
-	/*Michał, dlaczego to transition musi być tutaj, aby był taki sam efekt ale w stronę przeciwną? Czemu tutaj, a nie przy :hover?*/
+	font-size: 40px;
+	transition: ease-in-out 1.5s;
 }
-.btn-purple {
-	background-image: linear-gradient(90deg, #8e44ad 50%, transparent 50%);
-	border-color: #8e44ad;
-	color: #8e44ad;
-	background-position: 100% 0;
-	background-size: 300%;
-	color: purple;
-	/*Prośba o wytłumaczenie dwóch powyższych styli background-*/
+.twitter {
+	color: #4099FF;
 }
-.btn-yellow {
-	background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
-	border-color: #f1c40f;
-	color: #f1c40f;
-	background-position: 100% 0;
-	background-size: 300%;
-	color: yellow;
+.facebook {
+	color: #3B5998;
 }
-.btn-blue {
-	background-image: linear-gradient(135deg, #3498db 50%, transparent 50%);
-	border-color: #3498db;
-	color: #3498db;
-	background-position: 100% 0;
-	background-size: 300%;
-	color: blue;
+.google-plus {
+	color: #DB5A3C;
 }
-[class^="btn-"]:hover {
-	background-position: 0 100%;
-	color: white;
+.instagram {
+	color: #5C3D2E;
 }
+.github {
+	color: #4183C4;
+}
+.icon-btn:hover {
+	transition: ease-in-out 1.5s;
+	/*animation: spin 4s linear;*/
+	transform: scale(1.10) rotate(720deg);
+}
+.twitter:hover {
+	background-color: white;
+}
+.facebook:hover  {
+	color: #FFFFFF;
+	background-color: #3B5998;
+}
+.google-plus:hover  {
+	color: #FFFFFF;
+	background-color: #DB5A3C;
+}
+.instagram:hover  {
+	color: #FFFFFF;
+	background-color: #5C3D2E;
+}
+.github:hover  {
+	color: #FFFFFF;
+	background-color: #4183C4;
+}
+
+/* @keyframes spin {
+	0% {transform: rotate(0deg);}
+	50% {transform: rotate(720deg);}
+	100% {transform: rotate(0deg);}
+} */
