@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #131212;
+}
+.jumbotron {
+	height: 100vh;
+	width: 100%;
+	padding-top: 42vh;
+	text-align: center;
+	background-image: url("http://s1.1zoom.me/b4960/723/Japan_Sky_Stars_Mount_Fuji_Night_Volcano_515568_3840x2160.jpg");
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+.jumbotron>h1 {
+	margin: 0 auto;
+	font-size: 38px;
+	font-weight: 500;
+	color: white;
+	font-family: "Quicksand";
+}
+h1 {
+	text-shadow: 1px 1px 1px black;
+}
+button {
+	margin-top: 20px;
+	padding: 15px 40px;
+	background-color: #4577ED;
+	font-size: 20px;
+	color: white;
+	font-family: "Quicksand";
+	border: none;
+}
+button:hover {
+	background: repeating-linear-gradient(-45deg, #765898 0, #765898 5%, #52d053 0, #52d053 10%);
+	transition: 3s linear;
+	transition-delay: 3s;
+	/*Z tego co czytałem na stackOverflow, to nie da się stransitionować gradientu?*/
+}
+.jumbotron button {
+	transition: .3s;
+	cursor: pointer;
+}
+#one {
+	color: white;
+	text-align: center;
+	background: repeating-linear-gradient(-45deg, #765898 0, #765898 5%, #52d053 0, #52d053 10%);
+	width: 100%;
+	padding: 0;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+	border-radius: 10px;
+}
+.gallery ul li img {
+	float: left;
+	width: 25%;
+	height: 25vh;
+	border-radius: 10px;
+	padding: 5px;
+	/*background-size: cover;*/
+	/*background-position: center;
+	Nie wiem czy są to konieczne właściwości tutaj
+	*/
+	/*Chciałem uzyskać równego wyświetlenia względem osi X. Próbowałem także w sposób flexowy
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+no ale nie wyszło, nie wiem czemu póki co
+Tutaj w taki sposób, który jest aktywny też nie działa, bo zostaje z prawej strony straszna luka}
+Plus- podmieniłem obrazki dla customowych. Przy braku utawienia height: 25vh obrazek miał różną wysokość.*/
+}
+.gallery img:hover {
+	opacity: 1;
+	cursor: pointer;
+	transition-duration: 3s;
+	box-shadow: 1px 1px 5px 2px white;
+}
+html:hover img {
+	opacity: 0.3;
+	transition-duration: 2s;
+}
