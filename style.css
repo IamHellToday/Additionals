@@ -71,9 +71,6 @@ ul {
 	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
-no ale nie wyszło, nie wiem czemu póki co
-Tutaj w taki sposób, który jest aktywny też nie działa, bo zostaje z prawej strony straszna luka}
-Plus- podmieniłem obrazki dla customowych. Przy braku utawienia height: 25vh obrazek miał różną wysokość.*/
 }
 .gallery img:hover {
 	opacity: 1;
