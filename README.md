@@ -19,3 +19,4 @@ Content(via branch):
 - simple-evangellion-gallery -> One of my first projects. Pure CSS3, and simplicity.
 - social-buttons -> CSS3.
 - timer -> Pure JavaScript.
+- simple-form -> Made with the use of Bootstrap.
