@@ -8,3 +8,4 @@ You will find here HTML, CSS, JavaScript, jQuery and in future some Back-End pro
 
 Navigate via branches, where the overall name is displayed, which can lead you to what this project is and with wich technology it was used.
 
+Some of them are uploaded here: https://codepen.io/krystianjablonski/
