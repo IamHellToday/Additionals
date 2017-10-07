@@ -1,19 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 <head>
-     <meta charset="UTF-8">
-    <title>Neon</title>
+    <title>Request a hotel room</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <button>OFF</button>
-    <ul>
-        <li>H</li>
-        <li>E</li>
-        <li>L</li>
-        <li>L</li>
-        <li>L</li>
-        <li>O</li>
-    </ul>
-    <script type="text/javascript" src="js/scripts.js"></script>
+<form>
+
+    <fieldset>
+        <legend>Personal data</legend>
+        <div class="double-input">
+
+		<div class="form-input-container">
+			
+			<label for="fname">First Name</label>
+        	<input for="fname" typ="text" id="fname" placeholder="Your first name" minlength="3" required></input>
+			</div>
+			
+			<div class="form-input-container">
+			<label for="lname">Last Name</label>
+        	<input for="lname" typ="text" id="fname" placeholder="Your last name" minlength="3" required></input>
+			</div>
+        </div>
+        <div class="double-input">
+		<div class="form-input-container">
+			<label for="email" type="email" id="email" required placeholder="email">Email</label>
+			<input for="email" type="email" id="email" placeholder="Your email" required></input>
+		</div>
+		<div class="form-input-container">
+			<label id="phone">Phone</label>
+			<input type="tel" id="phone" placeholder="Your phone number" required></input>
+    </fieldset>
+    
+    <fieldset>
+    	<legend>Room details</legend>
+    	
+        <div class="double-input">
+        
+        	<div class="form-input-container">
+        		<label for="hotelcity">City</label>
+        		<select id="hotelcity">
+        			<option value="1">Kielce</option>
+        			<option value="1">Warszawa</option>
+        			<option value="1">Olsztyn</option>
+        			<option value="1">Tarnów</option>
+        		</select>
+        	</div>
+			<div class="form-input-container">
+				<label for="capacity">For (capacity)</label>
+					<input type="number" id="capacity" value="1" min="1" max="10" step="1"></input>
+			</div>
+        </div>
+        
+        <div class="double-input">
+        
+			<div class="form-input-container date-select">
+				<label>Start date</label>
+					<select name="Start-date-day">
+						<option disabled selected>Day</option>
+						<option>1</option>
+						<option>2</option>
+					</select>
+					<select name="Start-date-month">
+						<option disabled selected>Month</option>
+						<option>January</option>
+						<option>February</option>
+					</select
+			</div>
+					
+			<div class="form-input-container date-select">
+					<label>End date</label>
+					<select name="End-date-day">
+						<option disabled selected>Day</option>
+						<option>1</option>
+						<option>2</option>
+					</select>
+					<select name="End-date-month">
+						<option disabled selected>Month</option>
+						<option>January</option>
+						<option>February</option>
+					</select>
+			</div>
+        </div>
+    </fieldset>
+    
+    <button type="submit">Submit a request</button>
+</form>
 </body>
 </html>

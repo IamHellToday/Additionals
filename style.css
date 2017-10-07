@@ -1,98 +1,96 @@
-@import url('https://fonts.googleapis.com/css?family=Monda');
+@import "https://fonts.googleapis.com/css?family=Lato:400,600,700&subset=latin-ext";
+
+body {
+  background: #ececec;
+  font-family: 'Lato';
+  padding: 10px 0;
+  margin: 0;
+  font-size: 14px;
+  overflow-x: hidden;
+  min-width: 345px;
+}
+
 * {
-    padding: 0;
-    margin: 0;
-  }
-  body {
-    height: 100vh;
-    background-color: black;
-    display: flex;
-  }
-  button {
-    position: absolute;
-    left: 5%;
-    top: 5%;
-  }
-  ul {
-    margin: auto;
-  }
-  li {
-    color: greenyellow;
-    display: inline-block;
-    font-size: 40px;
-    font-family: "Monda";
-    font-weight: bold;
-    letter-spacing: 4px;
-    text-shadow: 0 0 30px white, 0 0 10px greenyellow;
-    transition: opacity 0.5s;
-  }
-  
-  li:nth-child(3) {
-    transform: rotate(15deg) translateY(4px);
-    animation: neon 2s infinite linear;
-  }
-  
-  li.off {
-    opacity: 0;
-    animation-play-state: paused;
-  }
-  
-  @keyframes neon {
-    0% {
-      opacity: 0;
-    }
-    5% {
-      opacity: 1;
-    }
-    20% {
-      opacity: 1;
-    }
-    28% {
-      opacity: 0.5;
-    }
-    30% {
-      opacity: 0.5
-    }
-    39% {
-      opacity: 1;
-    }
-    44% {
-      opacity: 1;
-    }
-    49% {
-      opacity: 0.5;
-    }
-    54% {
-      opacity: 0.5;
-    }
-    55% {
-      opacity: 1;
-    }
-    70% {
-      opacity: 1;
-    }
-    80% {
-      opacity: 0;
-    }
-    88% {
-      opacity: 0;
-    }
-    91% {
-      opacity: 1
-    }
-    93% {
-      opacity: 1
-    }
-    95% {
-      opacity: 0
-    }
-    97% {
-      opacity: 0
-    }
-    98% {
-      opacity: 1
-    }
-    100% {
-      opacity: 0;
-    }
-  }
+  box-sizing: border-box;
+}
+*:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* write your code below this line */
+form {
+	max-width: 768px;
+	display: block;
+	width: 95%;
+	background-color: #162e3f;
+	padding: 25px 0;
+	margin: 40px auto;
+	color: white;
+	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+fieldset {
+	border: none;
+	width: 90%;
+	margin: 10px auto;
+}
+legend {
+	margin: 30px 0 0;
+	font-size: 24px;
+	font-weight: 700;
+}
+.double-input {
+	margin: 20px auto;
+}
+.double-input>div {
+	float: left;
+	width: 48%;
+	margin: 0 1% 10px;
+}
+label {
+	display: block;
+	margin: 10px;
+}
+button[type="submit"] {
+	height: 50px;
+	width: 300px;
+	background-color: #27ae60;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	line-height: 50px;
+	font-family: 'Lato';
+	box-shadow: 0 0 10px #131313;
+	display: block;
+	margin: 0 auto;
+}
+input, select {
+	height: 100%;
+	color: white;
+	background-color: transparent;
+	border: 1px solid #a9a9a9;
+	padding: 8px;
+	height: 35px;
+}
+.date-select>select {
+	height: 47%;
+}
+.date-select>select:first-of-type {
+	margin: 3%;
+}
+input:focus, select:focus {
+	border: 1px solid #2db92d;
+}
+input:valid, select:valid {
+	border: 1px solid #55ee70;
+}
+option {
+	color: black;
+	background-color: #ececec;
+}
