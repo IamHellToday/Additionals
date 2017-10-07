@@ -13,7 +13,7 @@ Some of them are uploaded here: https://codepen.io/krystianjablonski/
 Content(via branch):
 
 - CSS-Race -> Simple animation with only use of CSS3.
-- fun-witharrays-> Simple bunch of code regarding use of JavaScript objects, arrays.
+- fun-with-arrays-> Simple bunch of code regarding use of JavaScript objects, arrays.
 - loader -> Animation with only use of CSS3.
 - neon -> Animation with use of CSS3 and JavaScript.
 - simple-evangellion-gallery -> One of my first projects. Pure CSS3, and simplicity.
