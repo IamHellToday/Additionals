@@ -19,10 +19,10 @@
   li {
     color: greenyellow;
     display: inline-block;
-    font-size: 40px;
+    font-size: 90px;
     font-family: "Monda";
     font-weight: bold;
-    letter-spacing: 4px;
+    letter-spacing: 90px;
     text-shadow: 0 0 30px white, 0 0 10px greenyellow;
     transition: opacity 0.5s;
   }
