@@ -1,5 +1,5 @@
 html {
-  background:#018DED url(https://newevolutiondesigns.com/images/freebies/galaxy-wallpaper-36.jpg);
+  background:#018DED url(https://cdn.wallpapersafari.com/9/69/Hv29Lz.jpg);
   background-size:cover;
   font-family:'helvetica neue';
   text-align: center;
@@ -36,7 +36,7 @@ body {
 .hand {
   width:50%;
   height:6px;
-  background:black;
+  background:white;
   position: absolute;
   top:50%;
   transform-origin: 100%;
