@@ -1,98 +1,45 @@
-@import url('https://fonts.googleapis.com/css?family=Monda');
-* {
-    padding: 0;
+html {
+    font-size: 10px;
+    background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+    background-size: cover;
+}
+body, html {
     margin: 0;
-  }
-  body {
-    height: 100vh;
-    background-color: black;
+    padding: 0;
+    font-family: sans-serif;
+}
+.keys {
     display: flex;
-  }
-  button {
-    position: absolute;
-    left: 5%;
-    top: 5%;
-  }
-  ul {
-    margin: auto;
-  }
-  li {
-    color: greenyellow;
-    display: inline-block;
-    font-size: 90px;
-    font-family: "Monda";
-    font-weight: bold;
-    letter-spacing: 90px;
-    text-shadow: 0 0 30px white, 0 0 10px greenyellow;
-    transition: opacity 0.5s;
-  }
-  
-  li:nth-child(3) {
-    transform: rotate(15deg) translateY(4px);
-    animation: neon 2s infinite linear;
-  }
-  
-  li.off {
-    opacity: 0;
-    animation-play-state: paused;
-  }
-  
-  @keyframes neon {
-    0% {
-      opacity: 0;
-    }
-    5% {
-      opacity: 1;
-    }
-    20% {
-      opacity: 1;
-    }
-    28% {
-      opacity: 0.5;
-    }
-    30% {
-      opacity: 0.5
-    }
-    39% {
-      opacity: 1;
-    }
-    44% {
-      opacity: 1;
-    }
-    49% {
-      opacity: 0.5;
-    }
-    54% {
-      opacity: 0.5;
-    }
-    55% {
-      opacity: 1;
-    }
-    70% {
-      opacity: 1;
-    }
-    80% {
-      opacity: 0;
-    }
-    88% {
-      opacity: 0;
-    }
-    91% {
-      opacity: 1
-    }
-    93% {
-      opacity: 1
-    }
-    95% {
-      opacity: 0
-    }
-    97% {
-      opacity: 0
-    }
-    98% {
-      opacity: 1
-    }
-    100% {
-      opacity: 0;
-    }
-  }
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all 0.7 ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-sahdow: 0 0 .5rem black;
+}
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+}
