@@ -20,3 +20,7 @@ Content(via branch):
 - social-buttons -> CSS3.
 - timer -> Pure JavaScript.
 - simple-form -> Made with the use of Bootstrap.
+- drum-kit -> Interactive Drum Kit in your browser.
+- blurry-effect -> Some JavaScript we can control.
+- flex-pannels -> Great use of JavaScript with colaboration of CSS3.
+- js-css-clock -> No description needed.
